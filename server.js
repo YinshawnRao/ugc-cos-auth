@@ -4,7 +4,7 @@ var config = require('./config');
 
 http.createServer(function(req, res) {
 
-	var now = parseInt(Date.now() / 1000);
+    var now = parseInt(Date.now() / 1000);
     var rdm = parseInt(Math.random() * Math.pow(2, 32));
 
     var secretId = config.secretId,
